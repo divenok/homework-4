@@ -134,8 +134,8 @@ img {
 }
 
 .mail-header:hover,
-.mail-header:focus, 
-.phone-namber-header:hover, 
+.mail-header:focus,
+.phone-namber-header:hover,
 .phone-namber-header:focus {
   color: var(--accent-color);
 }
@@ -344,7 +344,7 @@ img {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
- } 
+}
 .filters-portfolio-list {
   display: flex;
   justify-content: center;
