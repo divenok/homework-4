@@ -134,7 +134,9 @@ img {
 }
 
 .mail-header:hover,
-.mail-header:focus {
+.mail-header:focus, 
+.phone-namber-header:hover, 
+.phone-namber-header:focus {
   color: var(--accent-color);
 }
 
