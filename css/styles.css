@@ -157,10 +157,8 @@ img {
 }
 
 .mail-header:hover,
-.mail-header:focus,
-.phone-namber-header:hover,
-.phone-namber-header:focus {
-  color: var(--accent-color);
+.mail-header:focus {
+  color:var(--accent-color);
 }
 
 /* ====== end header ====== */
@@ -242,10 +240,21 @@ img {
   background-color: #F5F4FA;
   border-radius: 4px;
 }
-.features-item .icon-antenna::before {
-  background-image: url();
+.icon-antenna::before {
+  background-image: url(../img/antenna.svg);
+  
 }
-.features-title {
+.icon-clock::before {
+  background-image: url(../img/clock.svg);
+  ;
+}
+.icon-diagram::before {
+  background-image: url(../img/diagram.svg)
+}
+.icon-astronaut::before {
+  background-image: url(../img/astronaut.svg)
+}
+.features-title::before {
   margin-bottom: 10px;
 
   font-family: var(--primary-font-family);
@@ -347,6 +356,27 @@ img {
   background-color: var(--accent-color);
 }
 /* ====== end team ====== */
+/* ====== start clients ====== */
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients-list-item {
+  box-sizing: border-box;
+  text-align: center;
+  flex-basis: calc((100% - (6 * 30px)) / 6); 
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.clients-list-item:not(:nth-child(6n)) {
+  margin-right: 30px;
+}
+.clients-list-item:not(:nth-last-child(-n + 6)) {
+  margin-bottom: 30px;
+}
 /* ====== start footer ====== */
 .footer {
   padding-top: 60px;
