@@ -361,6 +361,13 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+.clients-list-icon{
+  fill: #AFB1B8;
+}
+.clients-list-icon:hover .social-list-icon,
+.clients-list-icon:focus .social-list-icon {
+  fill: var(--accent-color);
+}
 .clients-list-item {
   box-sizing: border-box;
   text-align: center;
@@ -370,6 +377,7 @@ img {
 
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  
 }
 .clients-list-item:not(:nth-child(6n)) {
   margin-right: 30px;
