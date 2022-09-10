@@ -385,8 +385,8 @@ img {
 .clients-list-icon {
   fill: #AFB1B8;
 }
-.clients-list-item:hover,
-.clients-list-item:focus {
+.clients-list-icom:hover,
+.clients-list-icom:focus {
   fill: var(--accent-color);
 }
 
