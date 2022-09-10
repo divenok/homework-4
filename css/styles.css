@@ -234,7 +234,6 @@ img {
   height: 120px;
   margin-bottom: 30px;
 
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #F5F4FA;
@@ -254,7 +253,7 @@ img {
 .icon-astronaut::before {
   background-image: url(../img/astronaut.svg)
 }
-.features-title::before {
+.features-title {
   margin-bottom: 10px;
 
   font-family: var(--primary-font-family);
@@ -361,23 +360,21 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-.clients-list-icon{
-  fill: #AFB1B8;
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
 }
-.clients-list-icon:hover .social-list-icon,
-.clients-list-icon:focus .social-list-icon {
-  fill: var(--accent-color);
-}
+
 .clients-list-item {
   box-sizing: border-box;
   text-align: center;
   flex-basis: calc((100% - (6 * 30px)) / 6); 
-  width: 170px;
-  height: 92px;
-
-  border: 1px solid #AFB1B8;
+    
+  border: 0.8px solid #AFB1B8;
   border-radius: 4px;
-  
 }
 .clients-list-item:not(:nth-child(6n)) {
   margin-right: 30px;
@@ -385,6 +382,14 @@ img {
 .clients-list-item:not(:nth-last-child(-n + 6)) {
   margin-bottom: 30px;
 }
+.clients-list-icon {
+  fill: #AFB1B8;
+}
+.clients-list-item:hover,
+.clients-list-item:focus {
+  fill: var(--accent-color);
+}
+
 /* ====== start footer ====== */
 .footer {
   padding-top: 60px;
