@@ -294,6 +294,7 @@ img {
   flex-wrap: wrap;
 }
 .team-item {
+  min-width: 270px;
   text-align: center;
   flex-basis: calc((100% - (4 * 30px)) / 4);  
 
@@ -346,6 +347,7 @@ img {
 /* ====== start clients ====== */
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .clients-list-link {
   display: flex;
@@ -359,7 +361,7 @@ img {
   box-sizing: border-box;
   text-align: center;
   flex-basis: calc((100% - (6 * 30px)) / 6); 
-  
+  min-width: 170px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
@@ -387,7 +389,7 @@ img {
   background-color: var(--secondary-background-color);
 }
 .footer-container {
-  display: block;
+  display: flex;
   min-width: 241px;
 }
 .logo-footer-link {
@@ -418,7 +420,37 @@ img {
 
   color: var(--secondary-text-color-theme-dark);
 }
+.logo-address-list {
+  margin-right: 70px;
+}
+.associate {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+color: #FFFFFF;
+
+  color: #ffffff;
+}
+.social-list-footer {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.social-list-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.social-list-item:not(:nth-child(4n)) {
+  margin-right: 16px;
+}
 /* ====== end footer ====== */
 /* ====== end page Студія ====== */
 /* ====== start page Портфоліо ====== */
