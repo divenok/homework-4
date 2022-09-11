@@ -358,7 +358,6 @@ img {
 /* ====== start clients ====== */
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
 }
 .clients-list-link {
   display: flex;
@@ -385,11 +384,13 @@ img {
 .clients-list-icon {
   fill: #AFB1B8;
 }
-.clients-list-icom:hover,
-.clients-list-icom:focus {
+.clients-list-link:hover .clients-list-icon, .clients-list-link:focus .clients-list-icon {
   fill: var(--accent-color);
+ 
 }
-
+.clients-list-link:hover {
+  border: 1px solid #2196f3;
+}
 /* ====== start footer ====== */
 .footer {
   padding-top: 60px;
