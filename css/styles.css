@@ -228,9 +228,10 @@ img {
 .features-item:not(:nth-last-child(-n + 4)) {
   margin-bottom: 30px;
 }
-.features-item::before {
-  display: block;
-  content: "";
+.features-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   margin-bottom: 30px;
 
@@ -239,20 +240,7 @@ img {
   background-color: #F5F4FA;
   border-radius: 4px;
 }
-.icon-antenna::before {
-  background-image: url(../img/antenna.svg);
-  
-}
-.icon-clock::before {
-  background-image: url(../img/clock.svg);
-  ;
-}
-.icon-diagram::before {
-  background-image: url(../img/diagram.svg)
-}
-.icon-astronaut::before {
-  background-image: url(../img/astronaut.svg)
-}
+
 .features-title {
   margin-bottom: 10px;
 
