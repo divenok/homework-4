@@ -404,7 +404,8 @@ img {
 .clients-list-link:focus .clients-list-icon {
   fill: var(--accent-color);
 }
-.clients-list-item:hover {
+.clients-list-item:hover,
+.clients-list-item:focus {
   border-color: var(--accent-color);
 }
 /* ====== start footer ====== */
