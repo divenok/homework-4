@@ -419,12 +419,13 @@ img {
 /* ====== start footer ====== */
 .footer {
   background-color: var(--secondary-background-color);
+  padding: 60px 0;
+  
 }
 .footer-container {
   display: flex; 
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  align-items: baseline;
+  
 }
 .logo-footer-link {
   margin-top: 0px;
@@ -570,7 +571,7 @@ img {
 .projects-item-link {
   display: block;
   margin: 0 auto;
-  height: 404px;
+  
 }
 .projects-item-link:hover,
 .projects-item-link:focus {
